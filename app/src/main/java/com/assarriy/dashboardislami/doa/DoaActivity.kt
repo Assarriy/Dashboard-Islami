@@ -26,10 +26,41 @@ class DoaActivity : AppCompatActivity() {
     }
 
     private fun intentTolistActivity() {
-        binding.cardDoaPagiMalam.setOnClickListener{
+        binding.cardDoaPagiMalam.setOnClickListener {
             val intent = Intent(this, ListDoaActivity::class.java)
-            intent.putExtra(ListDoaActivity.EXTRA_TITLE, getString(R.string.pagi_dan_malam))
+            intent.putExtra(ListDoaActivity.EXTRA_TITLE, "Doa Pagi & Malam")
             intent.putExtra(ListDoaActivity.EXTRA_IMAGE, R.drawable.ic_doa_pagi_malam)
+            startActivity(intent)
+        }
+        binding.cardDoaRumah.setOnClickListener {
+            val intent = Intent(this, ListDoaActivity::class.java)
+            intent.putExtra(ListDoaActivity.EXTRA_TITLE, "Doa Rumah")
+            intent.putExtra(ListDoaActivity.EXTRA_IMAGE, R.drawable.ic_doa_rumah)
+            startActivity(intent)
+        }
+        binding.cardMakananMinuman.setOnClickListener {
+            val intent = Intent(this, ListDoaActivity::class.java)
+            intent.putExtra(ListDoaActivity.EXTRA_TITLE, "Makanan Dan Minuman")
+            intent.putExtra(ListDoaActivity.EXTRA_IMAGE, R.drawable.ic_doa_makanan_minuman)
+            startActivity(intent)
+        }
+        binding.cardDoaPerjalanan.setOnClickListener {
+            val intent = Intent(this, ListDoaActivity::class.java)
+            intent.putExtra(ListDoaActivity.EXTRA_TITLE, "Doa Perjalanan")
+            intent.putExtra(ListDoaActivity.EXTRA_IMAGE, R.drawable.ic_doa_perjalanan)
+            startActivity(intent)
+        }
+        binding.cardDoaShalat.setOnClickListener {
+            val intent = Intent(this, ListDoaActivity::class.java)
+            intent.putExtra(ListDoaActivity.EXTRA_TITLE, "Doa Shalat")
+            intent.putExtra(ListDoaActivity.EXTRA_IMAGE, R.drawable.ic_doa_sholat)
+            startActivity(intent)
+        }
+        binding.cardEtikaBaik.setOnClickListener {
+            val intent = Intent(this, ListDoaActivity::class.java)
+            intent.putExtra(ListDoaActivity.EXTRA_TITLE, "Etika Baik")
+            intent.putExtra(ListDoaActivity.EXTRA_IMAGE, R.drawable.ic_doa_etika_baik)
+            startActivity(intent)
         }
     }
 
