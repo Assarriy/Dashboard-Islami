@@ -9,6 +9,7 @@ import com.assarriy.dashboardislami.doa.DoaActivity
 import com.assarriy.dashboardislami.inspiration.InspirationData
 import com.assarriy.dashboardislami.inspiration.InspirationListAdapter
 import com.assarriy.dashboardislami.inspiration.InspirationModel
+import com.assarriy.dashboardislami.zakat.ZakatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,18 +21,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initRecyclerViewInspiration()
-        showMenu()
-
+        moveActivity()
     }
 
-    private fun showMenu() {
+    private fun moveActivity() {
         binding.btnDoa.setOnClickListener {
             startActivity(Intent(this, DoaActivity::class.java))
+        }
+        binding.btnZakat.setOnClickListener {
+            startActivity(Intent(this, ZakatActivity::class.java))
         }
     }
 
     private fun initRecyclerViewInspiration() {
-        val list : ArrayList<InspirationModel> = arrayListOf()
+        val list: ArrayList<InspirationModel> = arrayListOf()
         binding.rvInspiration.setHasFixedSize(true)
         list.addAll(InspirationData.listData)
         binding.rvInspiration.layoutManager = LinearLayoutManager(this)
