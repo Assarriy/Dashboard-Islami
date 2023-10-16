@@ -11,11 +11,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/harga_emas_16_oct_2023"
         android:textAlignment="center"
         android:textColor="@color/colorBlue"
-        android:theme="@style/TextAppearance.AppCompat.Title" />
+        android:textSize="25sp" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -91,25 +92,25 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginHorizontal="10dp">
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="25dp">
 
         <TableRow>
 
             <TextView
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
                 android:text="@string/status" />
 
             <TextView
                 android:id="@+id/tv_status"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/poppins_semi_bold"
-                android:hint="@string/wajib"/>
+                android:hint="@string/wajib" />
 
         </TableRow>
 
@@ -120,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/poppins_regular"
-                android:text="@string/zakat_yang_dikeluarkan"/>
+                android:text="@string/zakat_yang_dikeluarkan" />
 
             <TextView
                 android:id="@+id/tv_zakat_yang_dikeluarkan"
@@ -133,7 +134,6 @@
         </TableRow>
 
     </TableLayout>
-
 
 
 </LinearLayout>
