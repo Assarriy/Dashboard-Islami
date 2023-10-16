@@ -29,7 +29,7 @@ class ZakatActivity : AppCompatActivity() {
             val totalHarta = binding.edtTotalKeseluruhanHarta.text.trim().toString()
 
             if (totalHarta.isEmpty()) {
-                !isEmptyField
+                isEmptyField = true
                 binding.edtTotalKeseluruhanHarta.error = "Field ini tidak boleh kosong"
             }
 
