@@ -9,6 +9,7 @@ import com.assarriy.dashboardislami.doa.DoaActivity
 import com.assarriy.dashboardislami.inspiration.InspirationData
 import com.assarriy.dashboardislami.inspiration.InspirationListAdapter
 import com.assarriy.dashboardislami.inspiration.InspirationModel
+import com.assarriy.dashboardislami.kajian.KajianActivity
 import com.assarriy.dashboardislami.zakat.ZakatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnZakat.setOnClickListener {
             startActivity(Intent(this, ZakatActivity::class.java))
+        }
+        binding.btnVideoKajian.setOnClickListener {
+            startActivity(Intent(this, KajianActivity::class.java))
         }
     }
 
