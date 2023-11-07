@@ -55,4 +55,12 @@ dependencies {
     //youtube player
     implementation ("com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5")
 
+    //retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //loopj
+    implementation ("com.loopj.android:android-async-http:1.4.11")
+
+
 }

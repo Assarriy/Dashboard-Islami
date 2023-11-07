@@ -76,24 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_menu_dzikir" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:fontFamily="@font/poppins_semi_bold"
-                        android:text="@string/txt_menu_dzikir"
-                        android:textAlignment="center"
-                        android:textColor="@color/colorWhite"
-                        android:textSize="14sp" />
-
-                </LinearLayout>
+                    android:orientation="vertical"/>
 
                 <!--Zakat menu-->
                 <LinearLayout
