@@ -10,6 +10,7 @@ import com.assarriy.dashboardislami.inspiration.InspirationData
 import com.assarriy.dashboardislami.inspiration.InspirationListAdapter
 import com.assarriy.dashboardislami.inspiration.InspirationModel
 import com.assarriy.dashboardislami.kajian.KajianActivity
+import com.assarriy.dashboardislami.shalat.ShalatActivity
 import com.assarriy.dashboardislami.zakat.ZakatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -27,13 +28,16 @@ class MainActivity : AppCompatActivity() {
 
     private fun moveActivity() {
         binding.btnDoa.setOnClickListener {
-            startActivity(Intent(this, DoaActivity::class.java))
+            startActivity(Intent(this@MainActivity, DoaActivity::class.java))
         }
         binding.btnZakat.setOnClickListener {
-            startActivity(Intent(this, ZakatActivity::class.java))
+            startActivity(Intent(this@MainActivity, ZakatActivity::class.java))
         }
         binding.btnVideoKajian.setOnClickListener {
-            startActivity(Intent(this, KajianActivity::class.java))
+            startActivity(Intent(this@MainActivity, KajianActivity::class.java))
+        }
+        binding.btnJadwalShalat.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ShalatActivity::class.java))
         }
     }
 

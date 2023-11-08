@@ -53,7 +53,7 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.12.0")
 
     //youtube player
-    implementation ("com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5")
+    implementation ("com.pierfrancescosoffritti.androidyoutubeplayer:core:12.1.0")
 
     //retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
