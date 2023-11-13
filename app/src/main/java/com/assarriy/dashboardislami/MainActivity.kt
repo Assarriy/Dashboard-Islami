@@ -3,6 +3,7 @@ package com.assarriy.dashboardislami
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.assarriy.dashboardislami.databinding.ActivityMainBinding
 import com.assarriy.dashboardislami.doa.DoaActivity
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this@MainActivity, ZakatActivity::class.java))
         }
         binding.btnVideoKajian.setOnClickListener {
+            Toast.makeText(this, "test", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@MainActivity, KajianActivity::class.java))
         }
         binding.btnJadwalShalat.setOnClickListener {

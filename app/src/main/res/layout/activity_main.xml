@@ -71,12 +71,6 @@
                 </LinearLayout>
 
                 <!--Dzikir menu-->
-                <LinearLayout
-                    android:id="@+id/btn_dzikir"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="24dp"
-                    android:orientation="vertical"/>
 
                 <!--Zakat menu-->
                 <LinearLayout

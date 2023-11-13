@@ -21,13 +21,14 @@
             android:name=".zakat.ZakatActivity"
             android:exported="false" />
         <activity
+            android:name=".kajian.KajianActivity"
+            android:exported="false" />
+        <activity
             android:name=".doa.ListDoaActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:exported="false" />
         <activity
             android:name=".doa.DetailDoaActivity"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:exported="false" />
         <activity
             android:name=".doa.DoaActivity"
             android:exported="false" />

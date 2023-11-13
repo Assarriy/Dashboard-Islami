@@ -15,11 +15,6 @@ class DoaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDoaBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//        action bar
-        val actionBar = supportActionBar
-        actionBar!!.title = "Doa Harian"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
 
         intentTolistActivity()
 

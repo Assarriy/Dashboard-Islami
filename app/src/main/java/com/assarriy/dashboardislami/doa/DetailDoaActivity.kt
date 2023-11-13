@@ -15,9 +15,6 @@ class DetailDoaActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val doa = intent.getParcelableExtra<DoaModel>(EXTRA_DOA) as DoaModel
-        val actionBar = supportActionBar
-        actionBar!!.title = doa.title
-        actionBar.setDisplayHomeAsUpEnabled(true)
 
         binding.tvTitle.text = doa.title
         binding.tvDoa.text = doa.doa
